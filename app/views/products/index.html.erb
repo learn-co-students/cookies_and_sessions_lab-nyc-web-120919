@@ -1,0 +1,10 @@
+<h1>product page</h1>
+
+<%= session[:cart] %>
+
+<%= form_tag  '/', method: :post do %>
+  <%= label_tag :product %>
+  <%= text_field_tag :product %>
+  <%= submit_tag 'add to cart'%>
+<%end%>
+
